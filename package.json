@@ -1,0 +1,62 @@
+{
+  "name": "tezos-collect-webapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@airgap/beacon-sdk": "^3.2.0",
+    "@ledgerhq/hw-transport-u2f": "^5.22.0",
+    "@taquito/beacon-wallet": "^14.0.0",
+    "@taquito/ledger-signer": "^10.2.1",
+    "@taquito/taquito": "^10.2.1",
+    "@taquito/utils": "^14.0.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.6.3",
+    "@types/jest": "^26.0.20",
+    "@types/ledgerhq__hw-transport-u2f": "^4.21.2",
+    "@types/node": "^14.14.25",
+    "@types/react": "^17.0.1",
+    "@types/react-dom": "^17.0.0",
+    "crypto-js": "^4.1.1",
+    "ipfs-car": "^0.9.1",
+    "nft.storage": "^7.0.0",
+    "qrcode-generator": "^1.4.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-icons": "^4.4.0",
+    "react-rainbow-components": "^1.31.0",
+    "react-router-dom": "^6.4.1",
+    "react-scripts": "4.0.2",
+    "recharts": "^2.0.6",
+    "typescript": "^4.1.4",
+    "zustand": "^4.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "tailwind": "tailwindcss -i ./src/input.css -o ./src/output.css --watch ",
+    "update-taquito": "ncu -u --target newest --filter '/^@taquito.*$/' && npm i"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.1.1",
+    "@types/uuid": "^8.3.4",
+    "tailwindcss": "^3.1.8"
+  }
+}
